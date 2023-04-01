@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+    <script>
+        var string1 = "This is a string";
+        console.log(string1);
+
+        // let a = "u";
+        // {
+        //     let a = "u6";
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+        let age = 50
+
+        if(age>18){
+            console.log("drink water");
+        }
+       else if(age==2){
+            console.log("drink water");
+        }
+       else if(age==8){
+            console.log("drink water");
+        }
+       else {
+            console.log("drink drink");
+        }
+
+        const cups = 50;
+        switch(cups){
+            case 8 :
+                console.log("The value of cups is 8");
+                break;
+            case 81 :
+                console.log("The value of cups is 81");
+                break;
+            case 82 :
+                console.log("The value of cups is 82");
+                break;
+            case 83 :
+                console.log("The value of cups is 83");
+                break;
+            default :
+                console.log("The value of cups is none of 8,81,82,83");
+                break;
+        }
+    </script>
+</body>
+</html>
