@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn{
+            border: 2px solid black;
+            color: white;
+            background-color: red;
+            font-weight: bold;
+            padding: 35px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <p id = "para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum voluptatibus consequatur qui iure vel quaerat corrupti dignissimos ipsa soluta eaque aliquid tempore inventore minima repudiandae corporis numquam sunt natus, culpa repellat deserunt incidunt ea officiis. Ratione hic nisi, delectus fugiat ab sequi magni nulla non quidem explicabo animi minima enim doloribus sunt distinctio nemo quasi. Quo repellendus, incidunt quos sit excepturi explicabo repellat nihil quidem nam quae dolor pariatur totam aliquid laudantium tempore aliquam velit soluta, ipsa in! Ex, expedita earum. Fugit iste cupiditate nobis laudantium nesciunt at omnis, incidunt reprehenderit qui. Esse magnam atque, repellat quia nesciunt sapiente neque velit delectus quasi enim cupiditate inventore sit explicabo animi fugiat nobis possimus eveniet, distinctio magni minima dolorem dignissimos perferendis. Quae eius, cumque voluptatibus expedita labore, excepturi magni vero deleniti rem, dolorum earum commodi numquam tenetur eum est explicabo obcaecati unde temporibus odio perferendis adipisci ad. Animi ex amet alias distinctio!</p>
+    </div>
+    <button id = "btn" on click = "toggle hide()">show/hide</button>
+     <script>
+         let para = document.getElementbyId ('para');
+         para.addEventListener('mouseover', function run() {
+                alert('Mouse  Inside')
+            });
+
+            para.addEventListener('mouseout', function run() {
+                alert('Mouse  Outside')
+            });
+
+
+
+
+        function togglehide(){
+            // let btn = document.getElementById ('btn');
+            // let para = document.getElementbyId ('para');
+            if (para.style.display  != 'none' ){
+            para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+    
+
+        //     para.addEventListener('mouseover', function run() {
+        //         console.log('Mouse  Inside')
+        //     })
+        //     para.addEventListener('mouseout', function run() {
+        //         console.log('Mouse  Outside')
+        //     })
+        //     function togglehide(){
+        //         let para = document.getElementbyId ('para');
+        //     if(para.style.display      != 'none' ){
+        //         para.style.display = 'none';
+        //     }
+        //     else{
+        //         para.style.display = 'block';
+        //     }
+        // }
+        // }
+     </script>
+</body>
+</html>
